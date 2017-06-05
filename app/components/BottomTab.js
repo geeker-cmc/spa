@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router'
 import style from '../css/bottom.css'
+import _ from 'lodash'
 
 class TabItem extends Component{
 	render(){
@@ -18,6 +19,7 @@ class TabItem extends Component{
 
 
 class BottomTab extends Component{
+
 	render(){
 		let curHash=location.hash.substring(2)||'home';
 		return (

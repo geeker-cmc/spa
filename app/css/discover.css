@@ -1,0 +1,22 @@
+.discover{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.discoverTop{
+	position:fixed;
+	top:0;
+	height:50px;
+	line-height:50px;
+	font-size:2rem;
+	font-weight:bold;
+	background-color:#f8f8f8;
+	opacity:.8;
+	text-align:center;
+	border-bottom:1px solid #ddd;
+	width:100%;
+	max-width:768px;
+	left:50%;
+	transform:translateX(-50%);
+	z-index:5;
+}
