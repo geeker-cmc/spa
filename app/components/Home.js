@@ -22,6 +22,7 @@ class RecommendBox extends Component{
 class RecommendItem extends Component{
 	render(){
 		return (
+			
 			<div className={style.recommendItem}>
 				<div className={style.recommendImgBox}>
 					<img className={style.recommendImg} src={require('../images/covers/'+this.props.cover)} />
