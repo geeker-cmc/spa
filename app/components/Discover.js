@@ -23,7 +23,7 @@ class DiscoverTopRow extends Component{
 }
 
 class DiscoverSection extends Component{
-	<render></render>(){
+	render(){
 		const name=encodeURIComponent(this.props.name);
 		return (
 			<Link to={`/topic/${name}`}>
@@ -33,13 +33,13 @@ class DiscoverSection extends Component{
 					<p>{`${this.props.number}篇推荐`}</p>
 					<div className={style.sectionImgBox}>
 						<div className={style.sectionImg}>
-							<img src={require(`../images/discovers/${this.props.images[0]}.jpg`)} />
+							<img src={require(`../images/discovers/${this.props.imgs[0]}.jpg`)} />
 						</div>
 						<div className={style.sectionImg}>
-							<img src={require(`../images/discovers/${this.props.images[1]}.jpg`)} />
+							<img src={require(`../images/discovers/${this.props.imgs[1]}.jpg`)} />
 						</div>
 						<div className={style.sectionImg}>
-							<img src={require(`../images/discovers/${this.props.images[2]}.jpg`)} />
+							<img src={require(`../images/discovers/${this.props.imgs[2]}.jpg`)} />
 						</div>
 					</div>
 				</div>
@@ -126,6 +126,7 @@ export default class Discover extends Component{
 		return (
 			<div className={style.discover}>
 				<DiscoverTop />
+				<DiscoverBox />
 				<BottomTab />
 			</div>
 			)
