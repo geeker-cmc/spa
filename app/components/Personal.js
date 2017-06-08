@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import BottomTab from './BottomTab'
+import style from '../css/personal.css'
 
 class HeaderInfo extends Component{
 	render(){
@@ -55,8 +56,11 @@ class SettingBox extends Component{
 export default class Personal extends Component{
 	render(){
 		return (
+		 <div className={style.personal}>
+		 	<HeaderBox />
+		 	<SettingBox />
 			<BottomTab />
-
+		</div>
 			)
 	}
 }
