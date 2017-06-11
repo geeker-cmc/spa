@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import BottomTab from './BottomTab'
 import style from '../css/personal.css'
+import {Link} from 'react-router'
+import SettingItem from './SettingItem'
 
 class HeaderInfo extends Component{
 	render(){
@@ -47,7 +49,7 @@ class SettingBox extends Component{
 				</div>
 				<div className={style.settingArea}>
 					<SettingRoute name='help' title='客服与帮助' />
-					<SettingRoute name='settting' title='设置' />
+					<SettingRoute name='setting' title='设置' />
 				</div>
 			</div>
 			)
