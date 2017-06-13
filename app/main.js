@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Discover from './components/Discover'
 import PersonalBox from './components/PersonalBox'
 import Personal from './components/Personal'
+import Detail from './components/Detail'
 
 ReactDOM.render(
 	(
@@ -15,6 +16,7 @@ ReactDOM.render(
 			<Route path='/personal' component={PersonalBox}>
 				<IndexRoute component={Personal} />
 			</Route>
+			<Route path='/detail/:id' component={Detail} />
 		</Router>
 		),document.getElementById('app')
 	)
